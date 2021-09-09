@@ -1,24 +1,26 @@
-# Siraben Library
+# govapi library
 
 For...
 
-  - display my name, last name, nick name and email
+  - request Thai government data with API
 
 
-### Installation
+### installation
 
 ```sh
-pip install siraben
+pip install govapi
 ```
 
+### How to get your token key
+1. Go to data.go.th
+2. Register this web
+3. Click menu "for developer" (คลิกที่เมนู สำหรับนักพัฒนา)
+4. Sign in
+5. It will show you token key
 
-### Using
+### using
 
 ```sh
-from siraben import Siraben
-
-x = Siraben()
-print(x.name)
-print(x.lastname)
-x.WhoIAm()
+from govapi import GovAPI
+GovAPI([your token key])
 ```
